@@ -1,0 +1,194 @@
+{
+  "categories": [
+    {
+      "id": "supported",
+      "name": "Smart Catch Supported",
+      "description": "Fish species that our AI can instantly identify.",
+      "fishes": [
+        {
+          "id": "gilt_head_bream",
+          "name": "Gilt-Head Bream",
+          "scientific_name": "Sparus aurata",
+          "description": "A fish of the bream family Sparidae found in the Mediterranean Sea and the eastern coastal regions of the North Atlantic Ocean.",
+          "nutritional_info": "Rich in Protein and Omega-3.",
+          "regions": ["Mediterranean", "North Atlantic"],
+          "image_url": "assets/images/gilthead.avif"
+        },
+        {
+          "id": "red_sea_bream",
+          "name": "Red Sea Bream",
+          "scientific_name": "Pagrus major",
+          "description": "A fish of high economic value, prized for its flavor in Japan and other parts of Asia.",
+          "nutritional_info": "High in Vitamin B12 and Selenium.",
+          "regions": ["Northwest Pacific"],
+          "image_url": "assets/images/fish-red-bream.jpg"
+        },
+        {
+          "id": "sea_bass",
+          "name": "Sea Bass",
+          "scientific_name": "Dicentrarchus labrax",
+          "description": "A primarily ocean-going fish native to the waters off Europe's western and southern and Africa's northern coasts.",
+          "nutritional_info": "Low in fat, high in protein.",
+          "regions": ["Eastern Atlantic", "Mediterranean"],
+          "image_url": "assets/images/seabass.jpg"
+        },
+        {
+          "id": "red_mullet",
+          "name": "Red Mullet",
+          "scientific_name": "Mullus barbatus",
+          "description": "A species of goatfish found in the Mediterranean Sea, Marmara Sea, and Black Sea.",
+          "nutritional_info": "Good source of Iodine and Iron.",
+          "regions": ["Mediterranean", "Black Sea"],
+          "image_url": "assets/images/redmullet.jpg"
+        },
+        {
+          "id": "horse_mackerel",
+          "name": "Horse Mackerel",
+          "scientific_name": "Trachurus trachurus",
+          "description": "A species of jack mackerel in the family Carangidae.",
+          "nutritional_info": "Rich in Omega-3 fatty acids.",
+          "regions": ["Northeast Atlantic"],
+          "image_url": "assets/images/istockphoto-1392134590-612x612.jpg"
+        },
+        {
+          "id": "black_sea_sprat",
+          "name": "Black Sea Sprat",
+          "scientific_name": "Clupeonella cultriventris",
+          "description": "A small herring-like fish found in the Black Sea and Sea of Azov.",
+          "nutritional_info": "High in Calcium (when eaten whole).",
+          "regions": ["Black Sea", "Caspian Sea"],
+          "image_url": "assets/images/blackseasprat.jpeg"
+        },
+        {
+          "id": "striped_red_mullet",
+          "name": "Striped Red Mullet",
+          "scientific_name": "Mullus surmuletus",
+          "description": "A species of goatfish found in the Mediterranean Sea, eastern North Atlantic Ocean, and the Black Sea.",
+          "nutritional_info": "Contains Vitamin A and D.",
+          "regions": ["North Atlantic", "Mediterranean"],
+          "image_url": "assets/images/Striped-Red-Mullet.jpg"
+        },
+        {
+          "id": "trout",
+          "name": "Trout",
+          "scientific_name": "Oncorhynchus",
+          "description": "Freshwater fish belonging to the Salmonidae family. Popular for sport fishing and food.",
+          "nutritional_info": "Excellent source of protein and niacin.",
+          "regions": ["Global Freshwater"],
+          "image_url": "assets/images/trout.jpg"
+        },
+        {
+          "id": "shrimp",
+          "name": "Shrimp",
+          "scientific_name": "Caridea",
+          "description": "Decapod crustaceans with elongated bodies and a primarily swimming mode of locomotion.",
+          "nutritional_info": "High in protein, low in calories.",
+          "regions": ["Global Oceans"],
+          "image_url": "assets/images/shrimp.webp"
+        }
+      ]
+    },
+    {
+      "id": "marine",
+      "name": "Marine Fish (Sea Fish)",
+      "description": "Saltwater fishes found in the coastal regions of India.",
+      "fishes": [
+        {
+          "id": "pomfret",
+          "name": "Pomfret (Paplet)",
+          "scientific_name": "Pampus argenteus",
+          "description": "One of the most popular sea fishes in India. It has a flat body and a single bone, making it easy to eat. It is rich in protein and omega-3 fatty acids.",
+          "nutritional_info": "High in Protein, Omega-3, Vitamin A, B12, and D.",
+          "regions": ["Maharashtra", "Gujarat", "Goa", "West Bengal"],
+          "image_url": "assets/images/promphet.jpeg"
+        },
+        {
+          "id": "kingfish",
+          "name": "Kingfish (Surmai)",
+          "scientific_name": "Scomberomorus commerson",
+          "description": "Known as the King of the Indian Ocean. It is a delicacy in South and Western India. It has a distinct flavor and firm texture.",
+          "nutritional_info": "Rich in Protein, Omega-3, and Vitamins.",
+          "regions": ["Kerala", "Tamil Nadu", "Maharashtra", "Karnataka"],
+          "image_url": "assets/images/kingfish.jpeg"
+        },
+        {
+          "id": "mackerel",
+          "name": "Indian Mackerel (Bangda)",
+          "scientific_name": "Rastrelliger kanagurta",
+          "description": "A very common and affordable fish found on the Indian coast. It is oily and has a strong flavor, often used in curries and fries.",
+          "nutritional_info": "Excellent source of Omega-3 fatty acids and Selenium.",
+          "regions": ["Kerala", "Goa", "Maharashtra", "Karnataka"],
+          "image_url": "assets/images/mackerel.jpeg"
+        },
+        {
+          "id": "bombay_duck",
+          "name": "Bombay Duck (Bombil)",
+          "scientific_name": "Harpadon nehereus",
+          "description": "Despite its name, it is a fish. It has a very soft, gelatinous texture and is often eaten fried or dried.",
+          "nutritional_info": "High in protein and calcium (when dried).",
+          "regions": ["Maharashtra", "West Bengal", "Gujarat"],
+          "image_url": "assets/images/bombil.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "freshwater",
+      "name": "Freshwater Fish",
+      "description": "Fishes found in rivers, lakes, and ponds across India.",
+      "fishes": [
+        {
+          "id": "rohu",
+          "name": "Rohu (Rui)",
+          "scientific_name": "Labeo rohita",
+          "description": "A species of carp found in rivers in South Asia. It is a large omnivore and extensively used in aquaculture.",
+          "nutritional_info": "Rich in Vitamin C and Omega-3 fatty acids.",
+          "regions": ["West Bengal", "Odisha", "Bihar", "Assam"],
+          "image_url": "assets/images/rohu.jpeg"
+        },
+        {
+          "id": "catla",
+          "name": "Catla (Bhakur)",
+          "scientific_name": "Gibelion catla",
+          "description": "Also known as the major South Asian carp. It is an economically important South Asian freshwater fish in the carp family.",
+          "nutritional_info": "Low in saturated fat, high in protein.",
+          "regions": ["West Bengal", "Assam", "Odisha"],
+          "image_url": "assets/images/catla.jpeg"
+        },
+        {
+          "id": "hilsa",
+          "name": "Hilsa (Ilish)",
+          "scientific_name": "Tenualosa ilisha",
+          "description": "The national fish of Bangladesh and very popular in West Bengal, India. It is an anadromous fish (migrates from sea to river to spawn).",
+          "nutritional_info": "Very high in Omega-3 fatty acids.",
+          "regions": ["West Bengal", "Odisha", "Andhra Pradesh"],
+          "image_url": "assets/images/hilsa.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "shellfish",
+      "name": "Shellfish",
+      "description": "Crustaceans and mollusks popular in Indian cuisine.",
+      "fishes": [
+        {
+          "id": "prawn",
+          "name": "Prawns (Jhinga)",
+          "scientific_name": "Dendrobranchiata",
+          "description": "Prawns are a common name for small aquatic crustaceans with an exoskeleton and ten legs. Widely used in curries and biryanis.",
+          "nutritional_info": "High in protein, low in fat, rich in Zinc and Vitamin E.",
+          "regions": ["Kerala", "West Bengal", "Goa", "Maharashtra"],
+          "image_url": "assets/images/prawns.jpeg"
+        },
+        {
+          "id": "crab",
+          "name": "Mud Crab (Kekda)",
+          "scientific_name": "Scylla serrata",
+          "description": "Found in estuaries and mangroves. Known for its sweet, tender meat.",
+          "nutritional_info": "Rich in Omega-3, Selenium, and Riboflavin.",
+          "regions": ["Kerala", "Tamil Nadu", "West Bengal"],
+          "image_url": "assets/images/crab.jpeg"
+        }
+      ]
+    }
+  ]
+}

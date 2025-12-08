@@ -1,0 +1,194 @@
+{
+  "categories": [
+    {
+      "id": "supported",
+      "name": "स्मार्ट कैच समर्थित",
+      "description": "मछली प्रजातियाँ जिन्हें हमारा AI तुरंत पहचान सकता है।",
+      "fishes": [
+        {
+          "id": "gilt_head_bream",
+          "name": "सुनहरी सिर वाली ब्रीम",
+          "scientific_name": "Sparus aurata",
+          "description": "भूमध्य सागर और उत्तरी अटलांटिक महासागर के पूर्वी तटीय क्षेत्रों में पाई जाने वाली ब्रीम परिवार की मछली।",
+          "nutritional_info": "प्रोटीन और ओमेगा-3 से भरपूर।",
+          "regions": ["भूमध्य सागर", "उत्तरी अटलांटिक"],
+          "image_url": "assets/images/gilthead.avif"
+        },
+        {
+          "id": "red_sea_bream",
+          "name": "लाल समुद्री ब्रीम",
+          "scientific_name": "Pagrus major",
+          "description": "उच्च आर्थिक मूल्य वाली मछली, जापान और एशिया के अन्य भागों में इसके स्वाद के लिए प्रसिद्ध।",
+          "nutritional_info": "विटामिन B12 और सेलेनियम में उच्च।",
+          "regions": ["उत्तर-पश्चिमी प्रशांत"],
+          "image_url": "assets/images/fish-red-bream.jpg"
+        },
+        {
+          "id": "sea_bass",
+          "name": "समुद्री बास",
+          "scientific_name": "Dicentrarchus labrax",
+          "description": "मुख्य रूप से समुद्री मछली जो यूरोप के पश्चिमी और दक्षिणी तथा अफ्रीका के उत्तरी तट के पानी में पाई जाती है।",
+          "nutritional_info": "वसा में कम, प्रोटीन में उच्च।",
+          "regions": ["पूर्वी अटलांटिक", "भूमध्य सागर"],
+          "image_url": "assets/images/seabass.jpg"
+        },
+        {
+          "id": "red_mullet",
+          "name": "लाल मुलेट",
+          "scientific_name": "Mullus barbatus",
+          "description": "भूमध्य सागर, मरमरा सागर और काला सागर में पाई जाने वाली गोटफिश की एक प्रजाति।",
+          "nutritional_info": "आयोडीन और आयरन का अच्छा स्रोत।",
+          "regions": ["भूमध्य सागर", "काला सागर"],
+          "image_url": "assets/images/redmullet.jpg"
+        },
+        {
+          "id": "horse_mackerel",
+          "name": "हॉर्स मैकेरल",
+          "scientific_name": "Trachurus trachurus",
+          "description": "कारंगिडे परिवार में जैक मैकेरल की एक प्रजाति।",
+          "nutritional_info": "ओमेगा-3 फैटी एसिड से भरपूर।",
+          "regions": ["उत्तर-पूर्वी अटलांटिक"],
+          "image_url": "assets/images/istockphoto-1392134590-612x612.jpg"
+        },
+        {
+          "id": "black_sea_sprat",
+          "name": "काला सागर स्प्रैट",
+          "scientific_name": "Clupeonella cultriventris",
+          "description": "काला सागर और आज़ोव सागर में पाई जाने वाली छोटी हेरिंग जैसी मछली।",
+          "nutritional_info": "कैल्शियम में उच्च (पूरी खाने पर)।",
+          "regions": ["काला सागर", "कैस्पियन सागर"],
+          "image_url": "assets/images/blackseasprat.jpeg"
+        },
+        {
+          "id": "striped_red_mullet",
+          "name": "धारीदार लाल मुलेट",
+          "scientific_name": "Mullus surmuletus",
+          "description": "भूमध्य सागर, पूर्वी उत्तरी अटलांटिक महासागर और काला सागर में पाई जाने वाली गोटफिश की एक प्रजाति।",
+          "nutritional_info": "विटामिन A और D युक्त।",
+          "regions": ["उत्तरी अटलांटिक", "भूमध्य सागर"],
+          "image_url": "assets/images/Striped-Red-Mullet.jpg"
+        },
+        {
+          "id": "trout",
+          "name": "ट्राउट",
+          "scientific_name": "Oncorhynchus",
+          "description": "सैल्मोनिडे परिवार से संबंधित मीठे पानी की मछली। खेल मछली पकड़ने और भोजन के लिए लोकप्रिय।",
+          "nutritional_info": "प्रोटीन और नियासिन का उत्कृष्ट स्रोत।",
+          "regions": ["वैश्विक मीठा पानी"],
+          "image_url": "assets/images/trout.jpg"
+        },
+        {
+          "id": "shrimp",
+          "name": "झींगा",
+          "scientific_name": "Caridea",
+          "description": "लम्बे शरीर और मुख्य रूप से तैराकी गति वाले दस पैर वाले क्रस्टेशियन।",
+          "nutritional_info": "प्रोटीन में उच्च, कैलोरी में कम।",
+          "regions": ["वैश्विक महासागर"],
+          "image_url": "assets/images/shrimp.webp"
+        }
+      ]
+    },
+    {
+      "id": "marine",
+      "name": "समुद्री मछली",
+      "description": "भारत के तटीय क्षेत्रों में पाई जाने वाली खारे पानी की मछलियाँ।",
+      "fishes": [
+        {
+          "id": "pomfret",
+          "name": "पापलेट (पोमफ्रेट)",
+          "scientific_name": "Pampus argenteus",
+          "description": "भारत में सबसे लोकप्रिय समुद्री मछलियों में से एक। इसका चपटा शरीर और एक हड्डी है, जिससे खाने में आसानी होती है। यह प्रोटीन और ओमेगा-3 फैटी एसिड से भरपूर है।",
+          "nutritional_info": "प्रोटीन, ओमेगा-3, विटामिन A, B12 और D में उच्च।",
+          "regions": ["महाराष्ट्र", "गुजरात", "गोवा", "पश्चिम बंगाल"],
+          "image_url": "assets/images/promphet.jpeg"
+        },
+        {
+          "id": "kingfish",
+          "name": "सुरमई (किंगफिश)",
+          "scientific_name": "Scomberomorus commerson",
+          "description": "हिंद महासागर के राजा के रूप में जाना जाता है। दक्षिण और पश्चिमी भारत में यह एक स्वादिष्ट व्यंजन है। इसका अलग स्वाद और मजबूत बनावट है।",
+          "nutritional_info": "प्रोटीन, ओमेगा-3 और विटामिन से भरपूर।",
+          "regions": ["केरल", "तमिलनाडु", "महाराष्ट्र", "कर्नाटक"],
+          "image_url": "assets/images/kingfish.jpeg"
+        },
+        {
+          "id": "mackerel",
+          "name": "बांगड़ा (भारतीय मैकेरल)",
+          "scientific_name": "Rastrelliger kanagurta",
+          "description": "भारतीय तट पर पाई जाने वाली एक बहुत ही आम और सस्ती मछली। यह तेल वाली है और इसका स्वाद तीखा है, अक्सर करी और फ्राई में उपयोग होती है।",
+          "nutritional_info": "ओमेगा-3 फैटी एसिड और सेलेनियम का उत्कृष्ट स्रोत।",
+          "regions": ["केरल", "गोवा", "महाराष्ट्र", "कर्नाटक"],
+          "image_url": "assets/images/mackerel.jpeg"
+        },
+        {
+          "id": "bombay_duck",
+          "name": "बोम्बिल (बॉम्बे डक)",
+          "scientific_name": "Harpadon nehereus",
+          "description": "इसके नाम के बावजूद, यह एक मछली है। इसकी बहुत नरम, जेली जैसी बनावट है और अक्सर इसे तला या सुखाकर खाया जाता है।",
+          "nutritional_info": "प्रोटीन में उच्च और कैल्शियम (सूखने पर)।",
+          "regions": ["महाराष्ट्र", "पश्चिम बंगाल", "गुजरात"],
+          "image_url": "assets/images/bombil.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "freshwater",
+      "name": "मीठे पानी की मछली",
+      "description": "भारत की नदियों, झीलों और तालाबों में पाई जाने वाली मछलियाँ।",
+      "fishes": [
+        {
+          "id": "rohu",
+          "name": "रोहू (रुई)",
+          "scientific_name": "Labeo rohita",
+          "description": "दक्षिण एशिया की नदियों में पाई जाने वाली कार्प की एक प्रजाति। यह एक बड़ी सर्वाहारी है और जलीय कृषि में व्यापक रूप से उपयोग की जाती है।",
+          "nutritional_info": "विटामिन C और ओमेगा-3 फैटी एसिड से भरपूर।",
+          "regions": ["पश्चिम बंगाल", "उड़ीसा", "बिहार", "असम"],
+          "image_url": "assets/images/rohu.jpeg"
+        },
+        {
+          "id": "catla",
+          "name": "कतला (भाकुर)",
+          "scientific_name": "Gibelion catla",
+          "description": "प्रमुख दक्षिण एशियाई कार्प के रूप में भी जाना जाता है। यह कार्प परिवार में एक आर्थिक रूप से महत्वपूर्ण दक्षिण एशियाई मीठे पानी की मछली है।",
+          "nutritional_info": "संतृप्त वसा में कम, प्रोटीन में उच्च।",
+          "regions": ["पश्चिम बंगाल", "असम", "उड़ीसा"],
+          "image_url": "assets/images/catla.jpeg"
+        },
+        {
+          "id": "hilsa",
+          "name": "इलिश (हिल्सा)",
+          "scientific_name": "Tenualosa ilisha",
+          "description": "बांग्लादेश की राष्ट्रीय मछली और पश्चिम बंगाल, भारत में बहुत लोकप्रिय। यह एक एनाड्रोमस मछली है (अंडे देने के लिए समुद्र से नदी में जाती है)।",
+          "nutritional_info": "ओमेगा-3 फैटी एसिड में बहुत उच्च।",
+          "regions": ["पश्चिम बंगाल", "उड़ीसा", "आंध्र प्रदेश"],
+          "image_url": "assets/images/hilsa.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "shellfish",
+      "name": "शंख मछली",
+      "description": "भारतीय व्यंजनों में लोकप्रिय क्रस्टेशियन और मोलस्क।",
+      "fishes": [
+        {
+          "id": "prawn",
+          "name": "झींगा (प्रॉन)",
+          "scientific_name": "Dendrobranchiata",
+          "description": "प्रॉन एक बाहरी कंकाल और दस पैरों वाले छोटे जलीय क्रस्टेशियन के लिए एक सामान्य नाम है। व्यापक रूप से करी और बिरयानी में उपयोग किया जाता है।",
+          "nutritional_info": "प्रोटीन में उच्च, वसा में कम, जिंक और विटामिन E से भरपूर।",
+          "regions": ["केरल", "पश्चिम बंगाल", "गोवा", "महाराष्ट्र"],
+          "image_url": "assets/images/prawns.jpeg"
+        },
+        {
+          "id": "crab",
+          "name": "केकड़ा (मड क्रैब)",
+          "scientific_name": "Scylla serrata",
+          "description": "मुहाने और मैंग्रोव में पाया जाता है। अपने मीठे, कोमल मांस के लिए जाना जाता है।",
+          "nutritional_info": "ओमेगा-3, सेलेनियम और राइबोफ्लेविन से भरपूर।",
+          "regions": ["केरल", "तमिलनाडु", "पश्चिम बंगाल"],
+          "image_url": "assets/images/crab.jpeg"
+        }
+      ]
+    }
+  ]
+}

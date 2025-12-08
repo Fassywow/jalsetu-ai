@@ -1,0 +1,194 @@
+{
+  "categories": [
+    {
+      "id": "supported",
+      "name": "સ્માર્ટ કેચ સપોર્ટેડ",
+      "description": "માછલીની પ્રજાતિઓ જેને અમારું AI તરત ઓળખી શકે છે.",
+      "fishes": [
+        {
+          "id": "gilt_head_bream",
+          "name": "ગોલ્ડન હેડ બ્રીમ",
+          "scientific_name": "Sparus aurata",
+          "description": "ભૂમધ્ય સમુદ્ર અને ઉત્તર એટલાન્ટિક મહાસાગરના પૂર્વીય દરિયાકાંઠાના પ્રદેશોમાં જોવા મળતી બ્રીમ કુટુંબની માછલી.",
+          "nutritional_info": "પ્રોટીન અને ઓમેગા-3 થી ભરપૂર.",
+          "regions": ["ભૂમધ્ય સમુદ્ર", "ઉત્તર એટલાન્ટિક"],
+          "image_url": "assets/images/gilthead.avif"
+        },
+        {
+          "id": "red_sea_bream",
+          "name": "લાલ સમુદ્રી બ્રીમ",
+          "scientific_name": "Pagrus major",
+          "description": "ઉચ્ચ આર્થિક મૂલ્ય ધરાવતી માછલી, જાપાન અને એશિયાના અન્ય ભાગોમાં તેના સ્વાદ માટે પ્રખ્યાત.",
+          "nutritional_info": "વિટામિન B12 અને સેલેનિયમમાં ઉચ્ચ.",
+          "regions": ["ઉત્તર-પશ્ચિમ પેસિફિક"],
+          "image_url": "assets/images/fish-red-bream.jpg"
+        },
+        {
+          "id": "sea_bass",
+          "name": "સમુદ્રી બાસ",
+          "scientific_name": "Dicentrarchus labrax",
+          "description": "મુખ્યત્વે સમુદ્રી માછલી જે યુરોપના પશ્ચિમી અને દક્ષિણી તથા આફ્રિકાના ઉત્તરી દરિયાકાંઠાના પાણીમાં જોવા મળે છે.",
+          "nutritional_info": "ચરબીમાં ઓછી, પ્રોટીનમાં ઉચ્ચ.",
+          "regions": ["પૂર્વી એટલાન્ટિક", "ભૂમધ્ય સમુદ્ર"],
+          "image_url": "assets/images/seabass.jpg"
+        },
+        {
+          "id": "red_mullet",
+          "name": "લાલ મુલેટ",
+          "scientific_name": "Mullus barbatus",
+          "description": "ભૂમધ્ય સમુદ્ર, મરમરા સમુદ્ર અને કાળા સમુદ્રમાં જોવા મળતી ગોટફિશની એક પ્રજાતિ.",
+          "nutritional_info": "આયોડીન અને આયર્નનો સારો સ્ત્રોત.",
+          "regions": ["ભૂમધ્ય સમુદ્ર", "કાળો સમુદ્ર"],
+          "image_url": "assets/images/redmullet.jpg"
+        },
+        {
+          "id": "horse_mackerel",
+          "name": "હોર્સ મેકરેલ",
+          "scientific_name": "Trachurus trachurus",
+          "description": "કારાંગિડે કુટુંબમાં જેક મેકરેલની એક પ્રજાતિ.",
+          "nutritional_info": "ઓમેગા-3 ફેટી એસિડથી ભરપૂર.",
+          "regions": ["ઉત્તર-પૂર્વ એટલાન્ટિક"],
+          "image_url": "assets/images/istockphoto-1392134590-612x612.jpg"
+        },
+        {
+          "id": "black_sea_sprat",
+          "name": "કાળો સમુદ્ર સ્પ્રેટ",
+          "scientific_name": "Clupeonella cultriventris",
+          "description": "કાળા સમુદ્ર અને એઝોવ સમુદ્રમાં જોવા મળતી નાની હેરિંગ જેવી માછલી.",
+          "nutritional_info": "કેલ્શિયમમાં ઉચ્ચ (આખી ખાવાથી).",
+          "regions": ["કાળો સમુદ્ર", "કેસ્પિયન સમુદ્ર"],
+          "image_url": "assets/images/blackseasprat.jpeg"
+        },
+        {
+          "id": "striped_red_mullet",
+          "name": "પટ્ટાવાળી લાલ મુલેટ",
+          "scientific_name": "Mullus surmuletus",
+          "description": "ભૂમધ્ય સમુદ્ર, પૂર્વ ઉત્તર એટલાન્ટિક મહાસાગર અને કાળા સમુદ્રમાં જોવા મળતી ગોટફિશની એક પ્રજાતિ.",
+          "nutritional_info": "વિટામિન A અને D ધરાવે છે.",
+          "regions": ["ઉત્તર એટલાન્ટિક", "ભૂમધ્ય સમુદ્ર"],
+          "image_url": "assets/images/Striped-Red-Mullet.jpg"
+        },
+        {
+          "id": "trout",
+          "name": "ટ્રાઉટ",
+          "scientific_name": "Oncorhynchus",
+          "description": "સૅલ્મોનિડે કુટુંબની તાજા પાણીની માછલી. રમત માછલી પકડવા અને ખોરાક માટે લોકપ્રિય.",
+          "nutritional_info": "પ્રોટીન અને નિયાસિનનો ઉત્કૃષ્ટ સ્ત્રોત.",
+          "regions": ["વૈશ્વિક તાજું પાણી"],
+          "image_url": "assets/images/trout.jpg"
+        },
+        {
+          "id": "shrimp",
+          "name": "ઝીંગા",
+          "scientific_name": "Caridea",
+          "description": "લાંબા શરીર અને મુખ્યત્વે તરવાની ગતિ ધરાવતા દસ પગવાળા ક્રસ્ટેશિયન.",
+          "nutritional_info": "પ્રોટીનમાં ઉચ્ચ, કેલરીમાં ઓછી.",
+          "regions": ["વૈશ્વિક મહાસાગરો"],
+          "image_url": "assets/images/shrimp.webp"
+        }
+      ]
+    },
+    {
+      "id": "marine",
+      "name": "દરિયાઈ માછલી",
+      "description": "ભારતના દરિયાકાંઠાના વિસ્તારોમાં જોવા મળતી ખારા પાણીની માછલીઓ.",
+      "fishes": [
+        {
+          "id": "pomfret",
+          "name": "પાપલેટ (પોમફ્રેટ)",
+          "scientific_name": "Pampus argenteus",
+          "description": "ભારતમાં સૌથી લોકપ્રિય દરિયાઈ માછલીઓમાંની એક. તેનું સપાટ શરીર અને એક હાડકું છે, જે ખાવામાં સરળ બનાવે છે. તે પ્રોટીન અને ઓમેગા-3 ફેટી એસિડથી ભરપૂર છે.",
+          "nutritional_info": "પ્રોટીન, ઓમેગા-3, વિટામિન A, B12 અને D માં ઉચ્ચ.",
+          "regions": ["મહારાષ્ટ્ર", "ગુજરાત", "ગોવા", "પશ્ચિમ બંગાળ"],
+          "image_url": "assets/images/promphet.jpeg"
+        },
+        {
+          "id": "kingfish",
+          "name": "સુરમઈ (કિંગફિશ)",
+          "scientific_name": "Scomberomorus commerson",
+          "description": "હિંદ મહાસાગરના રાજા તરીકે ઓળખાય છે. દક્ષિણ અને પશ્ચિમ ભારતમાં તે એક સ્વાદિષ્ટ વાનગી છે. તેનો અલગ સ્વાદ અને મજબૂત બનાવટ છે.",
+          "nutritional_info": "પ્રોટીન, ઓમેગા-3 અને વિટામિનથી ભરપૂર.",
+          "regions": ["કેરળ", "તમિલનાડુ", "મહારાષ્ટ્ર", "કર્ણાટક"],
+          "image_url": "assets/images/kingfish.jpeg"
+        },
+        {
+          "id": "mackerel",
+          "name": "બાંગડા (ભારતીય મેકરેલ)",
+          "scientific_name": "Rastrelliger kanagurta",
+          "description": "ભારતીય દરિયાકાંઠે જોવા મળતી ખૂબ જ સામાન્ય અને સસ્તી માછલી. તે તેલવાળી છે અને તેનો સ્વાદ તીખો છે, ઘણીવાર કરી અને ફ્રાયમાં વપરાય છે.",
+          "nutritional_info": "ઓમેગા-3 ફેટી એસિડ અને સેલેનિયમનો ઉત્કૃષ્ટ સ્ત્રોત.",
+          "regions": ["કેરળ", "ગોવા", "મહારાષ્ટ્ર", "કર્ણાટક"],
+          "image_url": "assets/images/mackerel.jpeg"
+        },
+        {
+          "id": "bombay_duck",
+          "name": "બોમ્બિલ (બોમ્બે ડક)",
+          "scientific_name": "Harpadon nehereus",
+          "description": "તેના નામ છતાં, તે એક માછલી છે. તેની ખૂબ જ નરમ, જેલી જેવી બનાવટ છે અને ઘણીવાર તળીને અથવા સૂકવીને ખાવામાં આવે છે.",
+          "nutritional_info": "પ્રોટીનમાં ઉચ્ચ અને કેલ્શિયમ (સૂકાયા પછી).",
+          "regions": ["મહારાષ્ટ્ર", "પશ્ચિમ બંગાળ", "ગુજરાત"],
+          "image_url": "assets/images/bombil.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "freshwater",
+      "name": "તાજા પાણીની માછલી",
+      "description": "ભારતની નદીઓ, તળાવો અને તળાવોમાં જોવા મળતી માછલીઓ.",
+      "fishes": [
+        {
+          "id": "rohu",
+          "name": "રોહુ (રુઈ)",
+          "scientific_name": "Labeo rohita",
+          "description": "દક્ષિણ એશિયાની નદીઓમાં જોવા મળતી કાર્પની એક પ્રજાતિ. તે એક મોટી સર્વભક્ષી છે અને જળકૃષિમાં વ્યાપકપણે ઉપયોગમાં લેવાય છે.",
+          "nutritional_info": "વિટામિન C અને ઓમેગા-3 ફેટી એસિડથી ભરપૂર.",
+          "regions": ["પશ્ચિમ બંગાળ", "ઓડિશા", "બિહાર", "આસામ"],
+          "image_url": "assets/images/rohu.jpeg"
+        },
+        {
+          "id": "catla",
+          "name": "કતલા (ભાકુર)",
+          "scientific_name": "Gibelion catla",
+          "description": "મુખ્ય દક્ષિણ એશિયાઈ કાર્પ તરીકે પણ ઓળખાય છે. તે કાર્પ કુટુંબમાં આર્થિક રીતે મહત્વપૂર્ણ દક્ષિણ એશિયાઈ તાજા પાણીની માછલી છે.",
+          "nutritional_info": "સંતૃપ્ત ચરબીમાં ઓછી, પ્રોટીનમાં ઉચ્ચ.",
+          "regions": ["પશ્ચિમ બંગાળ", "આસામ", "ઓડિશા"],
+          "image_url": "assets/images/catla.jpeg"
+        },
+        {
+          "id": "hilsa",
+          "name": "ઇલિશ (હિલ્સા)",
+          "scientific_name": "Tenualosa ilisha",
+          "description": "બાંગ્લાદેશની રાષ્ટ્રીય માછલી અને પશ્ચિમ બંગાળ, ભારતમાં ખૂબ લોકપ્રિય. તે એક એનાડ્રોમસ માછલી છે (ઇંડા મૂકવા સમુદ્રથી નદીમાં જાય છે).",
+          "nutritional_info": "ઓમેગા-3 ફેટી એસિડમાં ખૂબ ઉચ્ચ.",
+          "regions": ["પશ્ચિમ બંગાળ", "ઓડિશા", "આંધ્ર પ્રદેશ"],
+          "image_url": "assets/images/hilsa.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "shellfish",
+      "name": "શેલફિશ",
+      "description": "ભારતીય રસોઈમાં લોકપ્રિય ક્રસ્ટેશિયન અને મોલસ્ક.",
+      "fishes": [
+        {
+          "id": "prawn",
+          "name": "ઝીંગા (પ્રોન)",
+          "scientific_name": "Dendrobranchiata",
+          "description": "પ્રોન બાહ્ય હાડપિંજર અને દસ પગ ધરાવતા નાના જળચર ક્રસ્ટેશિયન માટે સામાન્ય નામ છે. વ્યાપકપણે કરી અને બિરયાનીમાં વપરાય છે.",
+          "nutritional_info": "પ્રોટીનમાં ઉચ્ચ, ચરબીમાં ઓછી, ઝિંક અને વિટામિન E થી ભરપૂર.",
+          "regions": ["કેરળ", "પશ્ચિમ બંગાળ", "ગોવા", "મહારાષ્ટ્ર"],
+          "image_url": "assets/images/prawns.jpeg"
+        },
+        {
+          "id": "crab",
+          "name": "કેકડો (મડ ક્રેબ)",
+          "scientific_name": "Scylla serrata",
+          "description": "નદીમુખ અને મેન્ગ્રોવમાં જોવા મળે છે. તેના મીઠા, કોમળ માંસ માટે જાણીતું.",
+          "nutritional_info": "ઓમેગા-3, સેલેનિયમ અને રાઈબોફ્લેવિનથી ભરપૂર.",
+          "regions": ["કેરળ", "તમિલનાડુ", "પશ્ચિમ બંગાળ"],
+          "image_url": "assets/images/crab.jpeg"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "368837237806",
+    "project_id": "fisherman-9b615",
+    "storage_bucket": "fisherman-9b615.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:368837237806:android:8e79107dd0b3fbcc30d3bf",
+        "android_client_info": {
+          "package_name": "com.fishid.fish_identifier"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoywMxmbmABEAd_gXG-7MXwfY3tgdUDto"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
