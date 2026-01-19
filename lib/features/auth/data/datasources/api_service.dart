@@ -12,7 +12,7 @@ class ApiService {
     _dio.options.baseUrl = baseUrl;
     _dio.options.headers = {
       'authToken':
-          'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJDLThEMDY2RDQ2RkI1RjRDMyIsImlhdCI6MTczNTE5ODQ0NCwiZXhwIjoxODkyODc4NDQ0fQ.9DDsWKugNq_aqJiksZgyL8sFK154EWnln59-cKkK9isijA0GsGdC7pEt0yoo9j7QF8KEw1ogSJMvn_mY_xky_Q'
+          'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJDLTU3NkRGNzgyRjFGMjRGRCIsImlhdCI6MTc2ODgzMjUyMywiZXhwIjoxOTI2NTEyNTIzfQ.opPyJ745vxB3RUqRc2MrmP0OsCEIxaTs5BSxITJiQB4pnF7PXL4p8sV70ZB9EJuRgBBdLh-K7iOdIpRIDrrclQ'
     };
   }
 
@@ -22,7 +22,7 @@ class ApiService {
         '/verification/v3/send',
         queryParameters: {
           'countryCode': '91',
-          'customerId': 'C-8D066D46FB5F4C3',
+          'customerId': 'C-576DF782F1F24FD',
           'flowType': 'SMS',
           'mobileNumber': phoneNumber,
         },
@@ -42,7 +42,7 @@ class ApiService {
         '/verification/v3/validateOtp',
         queryParameters: {
           'countryCode': '91',
-          'customerId': 'C-8D066D46FB5F4C3',
+          'customerId': 'C-576DF782F1F24FD',
           'mobileNumber': phoneNumber,
           'verificationId': verificationId,
           'code': otp,

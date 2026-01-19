@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "368837237806",
-    "project_id": "fisherman-9b615",
-    "storage_bucket": "fisherman-9b615.firebasestorage.app"
+    "project_number": "1050151413515",
+    "project_id": "smart-catch-ai",
+    "storage_bucket": "smart-catch-ai.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:368837237806:android:8e79107dd0b3fbcc30d3bf",
+        "mobilesdk_app_id": "1:1050151413515:android:83958c2a8865fcf329e40e",
         "android_client_info": {
           "package_name": "com.fishid.fish_identifier"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBoywMxmbmABEAd_gXG-7MXwfY3tgdUDto"
+          "current_key": "AIzaSyB38c-lG1K8mnzRptf9_oNf6TNCdU2fyPg"
         }
       ],
       "services": {

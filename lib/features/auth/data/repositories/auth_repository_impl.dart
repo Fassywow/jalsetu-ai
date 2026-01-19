@@ -58,6 +58,7 @@ class AuthRepositoryImpl implements AuthRepository {
     // Save to Firestore
     await _firestore.collection('users').doc(phoneNumber).set({
       'phoneNumber': phoneNumber,
+      'customerId': 'C-576DF782F1F24FD',
       'name': name,
       'age': age,
       'experience': experience,
