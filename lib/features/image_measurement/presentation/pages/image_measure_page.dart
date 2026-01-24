@@ -3,15 +3,18 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../ar_measurement/domain/usecases/calculate_weight.dart';
+import '../../../price_prediction/presentation/pages/price_prediction_page.dart';
 
 class ImageMeasurePage extends StatefulWidget {
   final File imageFile;
   final String? species;
+  final bool isFresh;
 
   const ImageMeasurePage({
     super.key,
     required this.imageFile,
     this.species,
+    this.isFresh = true,
   });
 
   @override
@@ -182,6 +185,31 @@ class _ImageMeasurePageState extends State<ImageMeasurePage> {
                         isHighlight: true,
                       ),
                     ],
+                  ),
+                  const SizedBox(height: 20),
+                  ElevatedButton.icon(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PricePredictionPage(
+                            species: widget.species ?? 'mackerel',
+                            weightGrams: _calculatedWeightGrams!,
+                            isFresh: widget.isFresh,
+                          ),
+                        ),
+                      );
+                    },
+                    icon: const Icon(Icons.currency_rupee),
+                    label: const Text('Predict Fair Price'),
+                    style: ElevatedButton.styleFrom(
+                      minimumSize: const Size(double.infinity, 50),
+                      backgroundColor: Colors.blue.shade700,
+                      foregroundColor: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                    ),
                   ),
                 ],
               ],

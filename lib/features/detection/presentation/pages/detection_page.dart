@@ -16,6 +16,7 @@ import '../widgets/detection_painter.dart';
 import '../../../../core/localization/localization_manager.dart';
 
 import '../../../image_measurement/presentation/pages/image_measure_page.dart';
+import '../../../explore/presentation/pages/explore_ai_page.dart';
 
 /// Page displaying detection results
 class DetectionPage extends StatefulWidget {
@@ -124,6 +125,11 @@ class _DetectionPageState extends State<DetectionPage> {
   Future<void> _loadImage() async {
     final state = context.read<DetectionBloc>().state;
     if (state is DetectionSuccess) {
+      // Pre-populate count from detections if it's currently empty
+      if (_countController.text.isEmpty && state.detections.isNotEmpty) {
+        _countController.text = state.detections.length.toString();
+      }
+
       final bytes = await state.imageFile.readAsBytes();
       final codec = await ui.instantiateImageCodec(bytes);
       final frame = await codec.getNextFrame();
@@ -469,21 +475,164 @@ class _DetectionPageState extends State<DetectionPage> {
                     ),
                   ),
 
+                  // 1. Detection Info or Low Confidence Warning
                   if (state.detections.isNotEmpty)
-                    Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 24, vertical: 8),
-                      child: Text(
-                        _loc.translateFishName(
-                            state.detections.first.className),
-                        style: GoogleFonts.outfit(
-                          fontSize: 18,
-                          fontWeight: FontWeight.w600,
-                          color: Colors.blue.shade700,
-                          letterSpacing: 1.2,
+                    if (state.detections.first.confidence < 0.60)
+                      // LOW CONFIDENCE UI
+                      Container(
+                        margin: const EdgeInsets.symmetric(
+                            horizontal: 24, vertical: 8),
+                        padding: const EdgeInsets.all(16),
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFFFF4E5), // Light Orange
+                          borderRadius: BorderRadius.circular(16),
+                          border: Border.all(
+                              color: const Color(0xFFFFD180)), // Orange border
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              children: [
+                                const Icon(Icons.warning_amber_rounded,
+                                    color: Colors.orange, size: 28),
+                                const SizedBox(width: 12),
+                                Expanded(
+                                  child: Text(
+                                    "Low Confidence Detection",
+                                    style: GoogleFonts.outfit(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18,
+                                      color: Colors.orange.shade900,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            const SizedBox(height: 12),
+                            Text(
+                              "Our AI model is not confident about this identification. The image quality or fish angle may be affecting accuracy.",
+                              style: GoogleFonts.outfit(
+                                fontSize: 14,
+                                color: Colors.orange.shade800,
+                                height: 1.4,
+                              ),
+                            ),
+                            const SizedBox(height: 16),
+                            Container(
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 12, vertical: 8),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(8),
+                                border:
+                                    Border.all(color: Colors.orange.shade200),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Text(
+                                    "Possible: ",
+                                    style: GoogleFonts.outfit(
+                                      color: Colors.grey.shade600,
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                  Text(
+                                    state.detections.first.className
+                                        .toUpperCase(),
+                                    style: GoogleFonts.outfit(
+                                      color: Colors.orange.shade900,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Text(
+                                    " (${(state.detections.first.confidence * 100).toStringAsFixed(0)}%)",
+                                    style: GoogleFonts.outfit(
+                                      color: Colors.grey.shade500,
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            const SizedBox(height: 20),
+                            SizedBox(
+                              width: double.infinity,
+                              child: ElevatedButton.icon(
+                                onPressed: () {
+                                  // Navigate to ExploreAIPage (JalSetu) with image
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => ExploreAIPage(
+                                        initialImage: state.imageFile,
+                                        initialPrompt:
+                                            "I found this fish but I'm not sure. Can you identify it and tell me more?",
+                                      ),
+                                    ),
+                                  );
+                                },
+                                icon: const Icon(Icons.auto_awesome,
+                                    color: Colors.white, size: 20),
+                                label: Text(
+                                  "Ask JelsetuAI",
+                                  style: GoogleFonts.outfit(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                style: ElevatedButton.styleFrom(
+                                  backgroundColor:
+                                      const Color(0xFF1E88E5), // Blue
+                                  padding:
+                                      const EdgeInsets.symmetric(vertical: 14),
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(12),
+                                  ),
+                                  elevation: 0,
+                                ),
+                              ),
+                            ),
+                            const SizedBox(height: 8),
+                            Center(
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(Icons.wifi,
+                                      size: 14, color: Colors.grey.shade500),
+                                  const SizedBox(width: 6),
+                                  Text(
+                                    "Requires internet connection",
+                                    style: GoogleFonts.outfit(
+                                      fontSize: 12,
+                                      color: Colors.grey.shade500,
+                                      fontStyle: FontStyle.italic,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      )
+                    else
+                      // HIGH CONFIDENCE UI (Standard)
+                      Padding(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 24, vertical: 8),
+                        child: Text(
+                          _loc.translateFishName(
+                              state.detections.first.className),
+                          style: GoogleFonts.outfit(
+                            fontSize: 18,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.blue.shade700,
+                            letterSpacing: 1.2,
+                          ),
                         ),
                       ),
-                    ),
 
                   const SizedBox(height: 16),
 
@@ -673,6 +822,9 @@ class _DetectionPageState extends State<DetectionPage> {
                                         species: state.detections.isNotEmpty
                                             ? state.detections.first.className
                                             : null,
+                                        isFresh:
+                                            state.freshnessResult?.isFresh ??
+                                                true,
                                       );
                                     },
                                   ),

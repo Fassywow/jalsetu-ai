@@ -15,11 +15,13 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:vector_math/vector_math_64.dart' as vector;
 import 'package:collection/collection.dart';
 import '../../domain/usecases/calculate_weight.dart';
+import '../../../price_prediction/presentation/pages/price_prediction_page.dart';
 
 class ARMeasurePage extends StatefulWidget {
   final String? species;
+  final bool isFresh;
 
-  const ARMeasurePage({super.key, this.species});
+  const ARMeasurePage({super.key, this.species, this.isFresh = true});
 
   @override
   State<ARMeasurePage> createState() => _ARMeasurePageState();
@@ -129,12 +131,38 @@ class _ARMeasurePageState extends State<ARMeasurePage> {
                       ],
                     ),
                     const SizedBox(height: 10),
-                    SizedBox(
-                      width: double.infinity,
-                      child: ElevatedButton(
-                        onPressed: _resetMeasurement,
-                        child: const Text('Measure Again'),
-                      ),
+                    const SizedBox(height: 10),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: ElevatedButton(
+                            onPressed: _resetMeasurement,
+                            child: const Text('Reset'),
+                          ),
+                        ),
+                        const SizedBox(width: 10),
+                        Expanded(
+                          child: ElevatedButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => PricePredictionPage(
+                                    species: widget.species ?? 'mackerel',
+                                    weightGrams: _weightGrams!,
+                                    isFresh: widget.isFresh,
+                                  ),
+                                ),
+                              );
+                            },
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.blue.shade700,
+                              foregroundColor: Colors.white,
+                            ),
+                            child: const Text('Fair Price'),
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),

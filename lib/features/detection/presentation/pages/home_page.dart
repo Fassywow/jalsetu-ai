@@ -19,6 +19,7 @@ import '../../../../core/localization/localization_manager.dart';
 import 'freshness_page.dart';
 import 'session_options_page.dart';
 import '../../../../features/explore/presentation/pages/explore_page.dart';
+import '../../../../features/explore/presentation/pages/hotspots_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -473,6 +474,31 @@ class DetectionView extends StatelessWidget {
                         ),
                       ),
                     ],
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      shape: BoxShape.circle,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.05),
+                          blurRadius: 10,
+                          offset: const Offset(0, 4),
+                        ),
+                      ],
+                    ),
+                    child: IconButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (_) => const HotspotsPage()),
+                        );
+                      },
+                      icon: const Icon(Icons.map_outlined,
+                          color: Colors.blue, size: 28),
+                      tooltip: "My Hotspots",
+                    ),
                   ),
                 ],
               ),
